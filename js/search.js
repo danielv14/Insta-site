@@ -17,7 +17,7 @@ instaSearch.controller("index", ["$scope", function ($scope) {
                 sortBy: 'most-liked',
                 limit: '30',
                 resolution: 'standard_resolution',
-                template: '<a class="fancybox" rel="group" href="{{image}}"><img src="{{image}}"/><div class="likes"><i class="fa fa-heart"></i> {{likes}}</div></a>',
+                template: '<a class="fancybox" rel="group" href="{{image}}"><img src="{{image}}"/><div class="likes">{{likes}} likes</div></a>',
                   after: function () {
                               var images = $("#instafeed").find('a');
                             $.each(images, function(index, image) {
