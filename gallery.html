@@ -3,35 +3,19 @@
         <head>
                 <title>Gallery Insta-site</title>
                 <link href = "css/style.css" rel = "stylesheet">
-                <link href = "css/bootstrap.min.css" rel = "stylesheet">
                 <link href = "css/animations.css" rel = "stylesheet">
                 <link href = 'css/fancybox.css' rel= 'stylesheet'>
 
         </head>
-        
-
 <body>
-<div class="container" ng-app="root">
- <div ng-controller="index">
-<center><h1>Instagram gallery</h1></center>
-
-<div class="row">
-
-              <div class="col-lg-12">
-                <div class="input-group">
-                  <input id="search" ng-model="search"  type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                    <button ng-click="searchTag()" ng-enter="search" id="submit" class="btn btn-default" type="button">Search</button>
-                  </span>
-                </div><!-- /input-group -->
-              </div><!-- /.col-lg-6 -->
-            </div><!-- /.row -->
-            </div><!-- /ng-controller -->
-
-
-<center><div id='instafeed'></div></center>
-
-</div> <!-- /container -->
+  <div class="container" ng-app="root">
+    <div ng-controller="index">
+      <h1>Instagram gallery</h1>
+        <input id="search" ng-model="search"  type="text"  placeholder="Search for...">
+        <input type="submit" value="Search" ng-click="searchTag()" ng-enter="search">
+    </div><!-- /ng-controller -->
+  <div id='instafeed'></div>
+  </div> <!-- /container -->
 		
 
 <script src='js/jquery.js'></script>            
@@ -39,6 +23,5 @@
 <script src='js/angular.js'></script>
 <script src="js/search.js"></script>
 <script src='js/fancybox.js'></script>
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
