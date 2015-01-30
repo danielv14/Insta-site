@@ -2,7 +2,7 @@
 
 ##Insta-site web applications
 This is a simplified version of the Insta-site that only shows the gallery and the slideshow.
-Both the gallery and the slideshow utilizes [instafeed](http://instafeedjs.com). In addition the gallery is also built with with search.js and angular.js located in the /js folder. Search.js taps into angular.js and makes the instagram-feed searchable since instafeed isn't by default.     
+Both the gallery and the slideshow utilizes [instafeed](http://instafeedjs.com). In addition the gallery is also built with with search.js and angular.js located in the /js folder. Search.js taps into angular.js and makes the instagram-feed searchable since instafeed isn't by default. Search.js also manipultes the incomming images and add classes to them which /css/animations.css animate    
 
 The slideshow , in addition to [instafeed](http://instafeedjs.com), uses the slideshow.js file located in /js folder to force the instagram-feed into a slideshow that displayes most liked pictures by a predefined hashtag. The slideshow.js file manipulates the images in the slideshow and adds classes for animation effects.
 
